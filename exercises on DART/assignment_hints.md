@@ -1,4 +1,4 @@
-## HINT [1]:
+## HINT for [1]:
 
 -Both x and y are simple values, and Dart's string interpolation will handle converting them to string representations. All you need to do is use the $ operator to reference them inside single quotes, with a space in between.
 
