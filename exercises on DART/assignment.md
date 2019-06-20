@@ -1,4 +1,4 @@
-## 1) The following function takes two integers as parameters. Make it return a string containing both integers separated by a space. For example, stringify(2, 3) should return '2 3'.
+## [1] The following function takes two integers as parameters. Make it return a string containing both integers separated by a space. For example, stringify(2, 3) should return '2 3'.
 
 ```
 String stringify(int x, int y) 
@@ -7,7 +7,7 @@ String stringify(int x, int y)
   // Return a formatted string here
 }
 ```
-## 2)Try putting the ??= and ?? operators to work below.
+## [2]Try putting the ??= and ?? operators to work below.
 ```
 String foo = 'a string';
 String bar; // Unassigned objects are null by default.
@@ -21,7 +21,7 @@ void updateSomeVars() {
 }
 
 ```
-## 3) Try using conditional property access to finish the code snippet below.
+## [3] Try using conditional property access to finish the code snippet below.
 ```
 // This method should return the uppercase version of `str`
 // or null if `str` is null.
@@ -31,7 +31,7 @@ String upperCaseIt(String str) {
 
 ```
 
-## 4) Try setting the following variables to the indicated values.
+## [4] Try setting the following variables to the indicated values.
 ```
 // Assign this a list containing 'a', 'b', and 'c' in that order:
 final aListOfStrings = 
@@ -52,7 +52,7 @@ final anEmptySetOfString =
 final anEmptyMapOfDoublesToInts = 
 
 ```
-## 5) Try finishing the following statements, which use arrow syntax.
+## [5] Try finishing the following statements, which use arrow syntax.
 ```
 class MyClass {
   int _value1 = 2;
@@ -71,7 +71,7 @@ class MyClass {
 }
 
 ```
-## 6) Imagine you have a shopping cart class that keeps a private List <double> of prices. Add the following:
+## [6] Imagine you have a shopping cart class that keeps a private List <double> of prices. Add the following:
 
 ## *A getter called total that returns the sum of the prices
 ## *A setter that replaces the list with a new one, as long as the new list doesn’t contain any negative prices (in which case the setter should throw an InvalidPriceException).
@@ -88,7 +88,30 @@ class ShoppingCart {
 
 ```
 
-## 7)Implement tryFunction below. It should execute an untrustworthy method and then do the following:
+## [7]Add a copyWith instance method to the MyDataObject class. It should take three named parameters:
+
+## 1. int newInt
+## 2. String newString
+## 3. double newDouble
+##When called, copyWith should return a new MyDataObject based on the current instance, with data from the preceding parameters (if any) copied into the object’s properties. For example, if newInt is non-null, then copy its value into anInt.
+```
+class MyDataObject {
+  final int anInt;
+  final String aString;
+  final double aDouble;
+
+  MyDataObject({
+     this.anInt = 1,
+     this.aString = 'Old!',
+     this.aDouble = 2.0,
+  });
+
+  // Add your copyWith method here:
+}
+
+```
+
+## [8]Implement tryFunction below. It should execute an untrustworthy method and then do the following:
 
 ## *If untrustworthy throws an ExceptionWithMessage, call logger.logException with the exception type and message (try using on and catch).
 ## *If untrustworthy throws an Exception, call logger.logException with the exception type (try using on for this one).
@@ -115,7 +138,7 @@ void tryFunction(VoidFunction untrustworthy, Logger logger) {
 }
 
 ```
-## 8)Add a one-line constructor to MyClass that uses this. syntax to receive and assign values for all three properties of the class.
+## [9]Add a one-line constructor to MyClass that uses this. syntax to receive and assign values for all three properties of the class.
 ```
 class MyClass {
   final int anInt;
@@ -126,7 +149,7 @@ class MyClass {
 }
 
 ```
-## 9)Give the Color class a constructor named Color.black that sets all three properties to zero.
+## [10]Give the Color class a constructor named Color.black that sets all three properties to zero.
 ```
 class Color {
   int red;
@@ -136,6 +159,18 @@ class Color {
   Color(this.red, this.green, this.blue);
 
   // Create a named constructor called "black" here:
+}
+
+```
+## [11]Modify the Recipe class so its instances can be constants, and create a constant constructor that does the following:
+## Has three parameters: ingredients, calories, and milligramsOfSodium (in that order).
+## Uses this. syntax to automatically assign the parameter values to the object properties of the same name.
+## Is constant, with the const keyword just before Recipe in the constructor declaration.
+```
+class Recipe {
+  List<String> ingredients;
+  int calories;
+  double milligramsOfSodium;
 }
 
 ```
