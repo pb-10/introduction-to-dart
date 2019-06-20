@@ -1,4 +1,4 @@
-## Solution for #1:
+## Solution for [1]:
 ```
 String stringify(int x, int y) {
   return '$x $y';
@@ -6,7 +6,7 @@ String stringify(int x, int y) {
 ```
 
 
-## Solution for #2:
+## Solution for [2]:
 ```
 String foo = 'a string';
 String bar; // Unassigned objects are null by default.
@@ -21,7 +21,7 @@ void updateBar() {
 ```
 
 
-## Solution for #3:
+## Solution for [3]:
 ```
 // This method should return the uppercase version of `str`
 // or null if `str` is null.
@@ -31,7 +31,7 @@ String upperCaseIt(String str) {
 ```
 
 
-## Solution for #4:
+## Solution for [4]:
 ```
 // Assign this a list containing 'a', 'b', and 'c' in that order:
 final aListOfStrings = ['a', 'b', 'c'];
@@ -53,7 +53,7 @@ final anEmptyMapOfDoublesToInts = <double, int>{};
 ```
 
 
-## Solution for #5:
+## Solution for [5]:
 ```
 class MyClass {
   int _value1 = 2;
@@ -73,7 +73,7 @@ class MyClass {
 ```
 
 
-## Solution for #6:
+## Solution for [6]:
 ```
 class InvalidPriceException {}
 
@@ -93,7 +93,7 @@ class ShoppingCart {
 ```
 
 
-## Solution for #7
+## Solution for [7]:
 ```
 String joinWithCommas(int a, [int b, int c, int d, int e]) {
   var total = '$a';
@@ -106,7 +106,7 @@ String joinWithCommas(int a, [int b, int c, int d, int e]) {
 ```
 
 
-## Solution for #8:
+## Solution for [8]:
 ```
 class MyDataObject {
   final int anInt;
@@ -130,7 +130,7 @@ class MyDataObject {
 ```
 
 
-## Solution for #9:
+## Solution for [9]:
 ```
 typedef VoidFunction = void Function();
 
@@ -158,7 +158,7 @@ void tryFunction(VoidFunction untrustworthy, Logger logger) {
 ```
 
 
-## Solution for #10:
+## Solution for [10]:
 ```
 class MyClass {
   final int anInt;
@@ -170,7 +170,7 @@ class MyClass {
 ```
 
 
-## Solution for #11:
+## Solution for [11]:
 ```
 class Color {
   int red;
@@ -188,7 +188,7 @@ class Color {
 ```
 
 
-## Solution for #12:
+## Solution for [12]:
 ```
 class Recipe {
   final List<String> ingredients;
