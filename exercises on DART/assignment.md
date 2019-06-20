@@ -7,7 +7,7 @@ String stringify(int x, int y)
   // Return a formatted string here
 }
 ```
-## [2]Try putting the ??= and ?? operators to work below.
+## [2] Try putting the ??= and ?? operators to work below.
 ```
 String foo = 'a string';
 String bar; // Unassigned objects are null by default.
@@ -88,7 +88,19 @@ class ShoppingCart {
 
 ```
 
-## [7]Add a copyWith instance method to the MyDataObject class. It should take three named parameters:
+## [7] Implement a function called joinWithCommas that accepts one to five integers, then returns a string of those numbers separated by commas. Here are some examples of function calls and returned values:
+
+##Function call	 	                  Returned value
+##joinWithCommas(1)	 	                   '1'
+##joinWithCommas(1, 2, 3)	            	'1,2,3'
+##joinWithCommas(1, 1, 1, 1, 1)	 	    '1,1,1,1,1'
+```
+String joinWithCommas(int a, [int b, int c, int d, int e]) {
+
+}
+```
+
+## [8] Add a copyWith instance method to the MyDataObject class. It should take three named parameters:
 
 ## 1. int newInt
 ## 2. String newString
@@ -111,7 +123,7 @@ class MyDataObject {
 
 ```
 
-## [8]Implement tryFunction below. It should execute an untrustworthy method and then do the following:
+## [9] Implement tryFunction below. It should execute an untrustworthy method and then do the following:
 
 ## *If untrustworthy throws an ExceptionWithMessage, call logger.logException with the exception type and message (try using on and catch).
 ## *If untrustworthy throws an Exception, call logger.logException with the exception type (try using on for this one).
@@ -138,7 +150,7 @@ void tryFunction(VoidFunction untrustworthy, Logger logger) {
 }
 
 ```
-## [9]Add a one-line constructor to MyClass that uses this. syntax to receive and assign values for all three properties of the class.
+## [10] Add a one-line constructor to MyClass that uses this. syntax to receive and assign values for all three properties of the class.
 ```
 class MyClass {
   final int anInt;
@@ -149,7 +161,7 @@ class MyClass {
 }
 
 ```
-## [10]Give the Color class a constructor named Color.black that sets all three properties to zero.
+## [11] Give the Color class a constructor named Color.black that sets all three properties to zero.
 ```
 class Color {
   int red;
@@ -162,7 +174,7 @@ class Color {
 }
 
 ```
-## [11]Modify the Recipe class so its instances can be constants, and create a constant constructor that does the following:
+## [12] Modify the Recipe class so its instances can be constants, and create a constant constructor that does the following:
 ## Has three parameters: ingredients, calories, and milligramsOfSodium (in that order).
 ## Uses this. syntax to automatically assign the parameter values to the object properties of the same name.
 ## Is constant, with the const keyword just before Recipe in the constructor declaration.

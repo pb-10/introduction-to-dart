@@ -24,20 +24,24 @@
 
 ##HINT for #7:
 
--The copyWith method shows up in a lot of classes and libraries. Yours should do a few things: use optional named parameters, create a new instance of MyDataObject, and use the data from the parameters to fill it (or the data from the current instance if the parameters are null. This is a chance to get more practice with the ?? operator!
+-The b, c, d, and e paramters will be null if they aren't provided by caller. The important thing, then, is to check whether those arguments are null before you add them to the final string.
 
 ##HINT for #8:
 
--This exercise looks tricky, but it's really one big `try` statement. Just call `untrustworthy` inside the `try`, and then use `on`, `catch`, and `finally` to catch exceptions and call methods on the logger.
+-The copyWith method shows up in a lot of classes and libraries. Yours should do a few things: use optional named parameters, create a new instance of MyDataObject, and use the data from the parameters to fill it (or the data from the current instance if the parameters are null. This is a chance to get more practice with the ?? operator!
 
 ##HINT for #9:
 
--This exercise has a one line solution. Just declare the constructor with `this.anInt`, `this.aString`, and `this.aDouble` as its parameters in that order.
+-This exercise looks tricky, but it's really one big `try` statement. Just call `untrustworthy` inside the `try`, and then use `on`, `catch`, and `finally` to catch exceptions and call methods on the logger.
 
 ##HINT for #10:
 
--The declaration for your constructor should be `Color.black() {}`. Inside the braces, set red, green, and blue to zero.
+-This exercise has a one line solution. Just declare the constructor with `this.anInt`, `this.aString`, and `this.aDouble` as its parameters in that order.
 
 ##HINT for #11:
+
+-The declaration for your constructor should be `Color.black() {}`. Inside the braces, set red, green, and blue to zero.
+
+##HINT for #12:
 
 -In order to make the constructor const, you'll need to make all the properties final.
